@@ -39,8 +39,8 @@ public class CampeonatoBrasileiroImpl {
             DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
             LocalDate localDate = LocalDate.parse(splittedLine[1], dateFormatter);
 
-            if (localDate.getYear() == 2019) {
-            //if (localDate.getYear() == 2020 || localDate.getYear() == 2021) {
+            //if (localDate.getYear() == 2019) {
+            if (localDate.getYear() == 2020 || localDate.getYear() == 2021) {
 
                 DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm");
                 LocalTime localTime = LocalTime.parse(splittedLine[2], timeFormatter);
